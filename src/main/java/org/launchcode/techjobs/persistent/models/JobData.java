@@ -1,6 +1,7 @@
 package org.launchcode.techjobs.persistent.models;
 
 import java.util.ArrayList;
+import java.util.List;
 
 // This is a change made in sandbox.
 
@@ -23,7 +24,8 @@ public class JobData {
      */
     public static ArrayList<Job> findByColumnAndValue(String column, String value, Iterable<Job> allJobs) {
 
-        ArrayList<Job> results = new ArrayList<>();
+
+        ArrayList<Job>results =new ArrayList<>();
 
         if (value.toLowerCase().equals("all")){
             return (ArrayList<Job>) allJobs;
