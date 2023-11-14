@@ -21,16 +21,13 @@ public class Job extends AbstractEntity {
     }
 
     // Initialize the id and value fields.
-    public Job(Employer anEmployer, List<Skill>  someSkills) {
+    public Job(Employer anEmployer, List<Skill> someSkills) {
         //super();
         this.employer = anEmployer;
         this.skills = someSkills;
     }
 
     // Getters and setters.
-    
-
-
     public Employer getEmployer() {
         return employer;
     }
@@ -38,6 +35,14 @@ public class Job extends AbstractEntity {
     public void setEmployer(Employer employer) {
         this.employer = employer;
     }
+    public List<Skill> getSkills() {
+        return skills;
+    }
+
+    public void setSkills(List<Skill> skills) {
+        this.skills = skills;
+    }
+}
 
     /*public String getSkills() {
         return skills;
@@ -47,11 +52,4 @@ public class Job extends AbstractEntity {
         this.skills = skills;
     }*/
 
-    public List<Skill> getSkills() {
-        return skills;
-    }
 
-    public void setSkills(List<Skill> skills) {
-        this.skills = skills;
-    }
-}
